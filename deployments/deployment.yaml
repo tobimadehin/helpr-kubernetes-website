@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helpr
+  labels:
+    app: helpr
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: helpr
+  template:
+    metadata:
+      labels:
+        app: helpr
+    spec: # Pod spec
+      containers:
+      - name: helprcontainer
+        image: tobimadehin/helpr:1.0
+        ports:
+        - containerPort: 5000
