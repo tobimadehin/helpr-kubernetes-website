@@ -12,7 +12,7 @@ Provision a static flask web application.
 ### Steps
 1. Clone the project to your machine
 
-2. Create a cluster. Run ```k3d create cluster my-cluster```
+2. Create a cluster. Run ```k3d create cluster mycluster```
 
 3. cd into the /deployments directory and run  
 ```kubectl apply -f namespace.yaml```  
